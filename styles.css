@@ -1,0 +1,304 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+*,
+*::before,
+*::after {
+ box-sizing: border-box;
+}
+
+body {
+ background-color: #eee;
+ font-family: 'Lato', sans-serif;
+}
+
+#page-wrapper {
+ position: relative;
+}
+
+a {
+ color: #000;
+ text-decoration: none;
+}
+
+li {
+ list-style: none;
+}
+
+/** styling container **/
+
+.container {
+ max-width: 1000px;
+ width: 100%;
+ margin: 0 auto;
+}
+
+.btn {
+ padding: 0 20px;
+ height: 40px;
+ font-size: 1em;
+ font-weight: 900;
+ text-transform: uppercase;
+ border: 3px black solid;
+ border-radius: 2px;
+ background: transparent;
+ cursor: pointer;
+}
+
+.grid {
+ display: flex;
+}
+
+header {
+ position:fixed;
+ top: 0;
+ min-height: 75px;
+ padding: 0px 20px;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+}
+
+@media (max-width: 500px) {
+ header {
+  flex-wrap: nowrap;
+ }
+}
+
+.logo {
+ width: 60vw;
+}
+
+@media (max-width: 500px) {
+ .logo {
+  margin-top: 16px;
+  width: 100%;
+  position: relative;
+ }
+}
+
+.logo > img {
+ width: 100%;
+ height: 100%;
+ max-width: 150px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ margin-left: 10px;
+ margin-top: 10px;
+ border-radius: 100px 100px 0 0;
+}
+
+@media (max-width: 500px) {
+ .logo > img {
+  margin: 0 auto;
+ }
+}
+
+nav {
+ font-weight: 400;
+}
+
+@media (max-width: 500px) {
+ nav {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  text-align: center;
+  padding: 0 50px;
+
+ }
+ nav li {
+  padding-bottom: 5px;
+ }
+ nav > ul {
+  flex-direction: column;
+   justify-content: space-around;
+ }
+}
+
+nav > ul {
+ width: 34vw;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+}
+
+#heli {
+ margin-top: 50px;
+ height: 205px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ text-align: center;
+ justify-content: center;
+}
+#heli > h2 {
+ word-wrap: break-word;
+ margin-bottom: 20px;
+ font-size: 27px;
+}
+#heli input[type="email"] {
+width: 100%;
+padding: 6px;
+max-width: 280px;
+}
+#heli input[type="submit"] {
+ width: 100%;
+ height: 32px;
+ max-width: 150px;
+ margin: 16px 0;
+ background-color: #bd48b1;
+ border: 0;
+}
+#heli input[type="submit"]:hover {
+ background-color: rgb(142, 49, 192);
+ transition: background-color 1s;
+}
+@media (max-width: 500px) {
+ #heli {
+  margin-top: 125px;
+ }
+}
+#features { 
+ margin-top: 30px;
+}
+
+#features .icon {
+ width: 20vw;
+ height: 125px;
+ display: flex;
+ color: rgb(142, 49, 192);
+ align-items: center;
+ justify-content: center;
+}
+
+@media (max-width: 550px) {
+ #features .icon {
+  display: none;
+ }
+}
+#features .desc {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ height: 125px;
+ width: 85vw;
+ padding: 5px;
+}
+@media (max-width: 500px) {
+ #features .desc {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  height: 150px;
+ }
+}
+@media (max-width: 500px) {
+ #features {
+  margin-top: 0;
+ }
+}
+#how-it-works {
+ margin-top: 50px;
+ display: flex;
+ justify-content: center;
+}
+
+#how-it-works > iframe {
+ max-width: 550px;
+ width: 100%;
+}
+
+#pricing {
+display: flex;
+flex-direction: row;
+margin-top: 65px;
+justify-content: center;
+}
+.product {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ text-align: center;
+ width: calc(100% / 3);
+ margin: 10px;
+ border: 1px solid #000;
+ border-radius: 4px;
+}
+.product > .level {
+width: 100%;
+padding: 15px 0;
+font-weight: 700;
+background-color: #ddd;
+color: black;
+text-transform: uppercase;
+}
+.product > h2 {
+ margin-top: 15px;
+}
+.product > ol {
+ margin: 15px 0;
+}
+.product > ol > li {
+ padding: 5px 0;
+}
+.product>button {
+ border: 0;
+ margin: 15px 0;
+ font-weight: 400;
+ background-color: #bd48b1;
+}
+.product > button:hover {
+ background-color: rgb(142, 49, 192);
+ transition: background-color 1s;
+}
+@media (max-width: 500px) {
+ #btn {
+  margin-top: 35px;
+ }
+ #btn1 {
+  margin-top: 55px;
+ }
+}
+footer {
+ margin-top: 30px;
+ background-color: #ddd;
+ padding: 20px;
+}
+
+footer > ul {
+ display: flex;
+ justify-content: flex-end;
+
+}
+
+footer > ul > li {
+ padding: 0 10px;
+}
+
+footer > span {
+ margin-top: 5px;
+ display: flex;
+ justify-content: flex-end;
+ font-size: 0.9em;
+ color: #444;
+}
+
+/* 
+.iframe-container {
+ position: relative;
+ width: 100%;
+ padding-bottom: 56.25%;
+ height: 0;
+}
+
+.iframe-container iframe {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+} */
