@@ -12,4 +12,4 @@
 
 # Within the form, there is a submit input with a corresponding id="submit" and hen you click the #submit element, 
 
-#The product landing page have at least one media query and utilize CSS flexbox.
+# The product landing page have at least one media query and utilize CSS flexbox.
